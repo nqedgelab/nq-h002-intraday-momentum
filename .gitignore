@@ -1,0 +1,21 @@
+# Market data and anything derived from its prices
+data/
+*.parquet
+*.feather
+backtest/trades_*.csv
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
