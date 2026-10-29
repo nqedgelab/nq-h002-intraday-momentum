@@ -1,6 +1,6 @@
 # H-002: intraday momentum, first half hour to last half hour
 
-- **Status:** untested <!-- untested | testing | supported | rejected | inconclusive -->
+- **Status:** rejected <!-- untested | testing | supported | rejected | inconclusive -->
 - **Written:** 2026-10-29 (before any testing)
 
 No return from the 10:00 or 15:30–16:00 windows has been looked at. The in-sample years were already used once, for H-001's full-day trades, so their broad shape is known: it was mostly a rising market. Validation and holdout are still untouched.
@@ -71,4 +71,6 @@ A result that depends on a handful of days is fragile even if it passes. The tes
 - **Reported:** trade count, win rate, average win and loss in bp, expectancy in bp and in points, its bootstrap 95% CI, max drawdown in bp, expectancy without the top 10 trades, and the always-long benchmark.
 
 ## Result
-Filled in after testing.
+**Rejected at step 1** (tested 2026-10-29). In sample, after costs: 1,520 trades, 47.3% win rate, expectancy **−0.80 bp** (95% CI −2.36 bp to +0.83 bp), and +0.34 bp before costs. Always-long lost 1.98 bp on the same days. Validation and holdout were not used.
+
+Full results: [`results.md`](results.md).

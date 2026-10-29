@@ -1,0 +1,4 @@
+# Shared loader, pinned so this result can be reproduced exactly
+nqlab @ git+https://github.com/nqedgelab/nq-research@v0.1.0
+numpy>=2
+pytest>=8
